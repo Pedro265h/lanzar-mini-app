@@ -1,0 +1,36 @@
+{
+  "_nota": "Copia este archivo como meta.json en la carpeta de anuncios de la app y reemplaza los valores. Nunca pongas el token aquí: va en un archivo aparte (token_archivo).",
+  "token_archivo": "~/.config/meta-ads/token_cuenta",
+  "cuenta": "act_000000000000000",
+  "pagina": "000000000000000",
+  "instagram": null,
+  "pixel": "000000000000000",
+  "evento": "PURCHASE",
+  "link": "https://tuapp.app/",
+  "link_visible": "tuapp.app",
+  "boton": "LEARN_MORE",
+  "url_tags": "utm_source=facebook&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}",
+  "campana": "🟢VLD_APP_Cuenta_001_VOL_FRIO_VTA_7D_lp_15Oct",
+  "fecha": "15Oct",
+  "presupuesto_por_anuncio_usd": 10,
+  "prefijo_conjunto": "MUJERES_18-45_ES_MUNDO",
+  "segmentacion": {
+    "edad": [18, 45],
+    "generos": [2],
+    "idiomas": [1002],
+    "geo": {"country_groups": ["worldwide"]},
+    "excluir_paises": ["TW", "SG"]
+  },
+  "anuncios": [
+    {
+      "id": "1-noche",
+      "numero": "01",
+      "nombre": "ad01_noche",
+      "imagen_45": "png/1-noche-45.jpg",
+      "imagen_916": "png/1-noche-916.jpg",
+      "texto": "Texto principal del anuncio (sin afirmar atributos personales: nada de '¿Estás embarazada?').",
+      "titulo": "¿Es normal o voy a urgencias?",
+      "descripcion": "2 días gratis · cancelas cuando quieras"
+    }
+  ]
+}
