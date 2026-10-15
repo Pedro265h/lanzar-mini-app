@@ -19,19 +19,25 @@ Convierte una idea como *"quiero una app para mamás embarazadas que se venda en
 
 ## 🚀 Instalación
 
-**Claude Code (Mac / Linux):**
+### Mac / Linux (1 comando)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Pedro265h/lanzar-mini-app/main/install.sh | bash
+```
+
+### Windows (PowerShell, 1 comando)
+
+```powershell
+irm https://raw.githubusercontent.com/Pedro265h/lanzar-mini-app/main/install.ps1 | iex
+```
+
+### Manual
 
 ```bash
 git clone https://github.com/Pedro265h/lanzar-mini-app.git ~/.claude/skills/lanzar-mini-app
 ```
 
-**Claude Code (Windows, PowerShell):**
-
-```powershell
-git clone https://github.com/Pedro265h/lanzar-mini-app.git "$env:USERPROFILE\.claude\skills\lanzar-mini-app"
-```
-
-Es un repositorio privado: necesitas acceso a la cuenta de GitHub para clonarlo.
+> El repositorio es **privado**: mientras lo sea, usa la instalación manual con tu sesión de GitHub. Los comandos de 1 línea funcionan cuando se haga público.
 
 ## 💬 Cómo usarla
 
@@ -64,7 +70,8 @@ Los tokens nunca van en el código ni en el chat: se guardan en archivos locales
 
 ```
 lanzar-mini-app/
-├── SKILL.md                              # flujo por fases y reglas de oro
+├── SKILL.md                              # flujo por fases, reglas de oro y firma
+├── install.sh / install.ps1              # instaladores de 1 comando
 ├── references/
 │   ├── 01-idea-y-app.md                  # idea, stack, landing, panel
 │   ├── 02-hotmart-prueba-gratis.md       # links, webhook, prueba vs compra, checkout
@@ -84,8 +91,20 @@ lanzar-mini-app/
 
 ---
 
+## 👋 Sobre esta versión
+
 Mantenida por **Pedro Hernández**: IA aplicada al marketing y la automatización, en español.
+Sistemas reales con Claude Code, agentes y automatizaciones.
+
+### ¿Quieres aprender más?
+
+Si quieres aprender a **crear y lanzar tus propias apps con IA**, de la idea a la venta,
+suscríbete a la comunidad:
+
+👉 **https://www.skool.com/pedro-hernandez-7383**
 
 - **Instagram**: [@pedro.hernandez._](https://instagram.com/pedro.hernandez._)
+
+---
 
 _Creada por Pedro_
