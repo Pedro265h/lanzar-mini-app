@@ -75,7 +75,8 @@ def main(ruta_config):
 
     # 2. Campaña
     if "campana" not in log:
-        log["campana"] = api("POST", f"{cuenta}/campaigns", name=c["campana"], objective="OUTCOME_SALES", status="PAUSED",
+        # objetivo: OUTCOME_SALES (compra o prueba) por defecto; OUTCOME_LEADS si se optimiza el evento LEAD (p. ej. un test gratis).
+        log["campana"] = api("POST", f"{cuenta}/campaigns", name=c["campana"], objective=c.get("objetivo", "OUTCOME_SALES"), status="PAUSED",
                              special_ad_categories="[]", buying_type="AUCTION",
                              daily_budget=int(round(c.get("presupuesto_por_anuncio_usd", 10) * 100 * len(c["anuncios"]))),
                              bid_strategy="LOWEST_COST_WITHOUT_CAP")["id"]

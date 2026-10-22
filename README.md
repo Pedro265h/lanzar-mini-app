@@ -37,8 +37,6 @@ irm https://raw.githubusercontent.com/Pedro265h/lanzar-mini-app/main/install.ps1
 git clone https://github.com/Pedro265h/lanzar-mini-app.git ~/.claude/skills/lanzar-mini-app
 ```
 
-> El repositorio es **privado**: mientras lo sea, usa la instalación manual con tu sesión de GitHub. Los comandos de 1 línea funcionan cuando se haga público.
-
 ## 💬 Cómo usarla
 
 Escríbele a Claude algo como:

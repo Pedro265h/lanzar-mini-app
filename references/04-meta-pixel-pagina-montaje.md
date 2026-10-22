@@ -44,3 +44,8 @@
 ## Evento para optimizar con prueba gratis
 
 Por defecto, **Purchase** (es la venta real y llega dentro de los 7 días). Si al inicio hay muy pocas compras, la alternativa es optimizar por **StartTrial** (llega el mismo día, con más volumen pero de menor calidad). Propónlo como opción y deja que decida el dueño.
+
+## Si el embudo empieza con algo gratis (test, calculadora)
+- `montar_imagenes.py` acepta `"objetivo": "OUTCOME_LEADS"` y `"evento": "LEAD"`: así la campaña optimiza el paso gratis (más volumen con un píxel nuevo) y la compra igual se mide. Se usó así en Método Aguante, el 21-oct-2026.
+- El CBO se fija al crear la campaña con las imágenes (`presupuesto_por_anuncio_usd` × número de imágenes). Si después se suman videos, sube el valor por imagen para que el total cubra todos los anuncios: con 4 imágenes y 2 videos a US$30/día, son 7,5 por imagen.
+- Cada paso del test se manda al panel propio, no a Meta: el panel muestra en qué pregunta se va la gente y lo cruza por anuncio con utm_content.
